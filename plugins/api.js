@@ -3,6 +3,7 @@ export default function ({$axios}, inject) {
     console.log('Making request to ' + config.url)
   })
   inject('api', {
-    GET_TODOS: (config) => $axios.$get('https://jsonplaceholder.typicode.com/todos/1', config)
+    GET_TODOS: (config) => $axios.$get('https://jsonplaceholder.typicode.com/todos/1', config),
+    SET_TODOS: (config) => $axios.$get('https://jsonplaceholder.typicode.com/todos/1', config)
   })
 }
